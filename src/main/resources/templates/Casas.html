@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguiarrealstate</title>
+    <link rel="stylesheet" th:href="@{/css/reset.css}">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+</head>
+<body>
+    <div class="primeira_parte">
+        <h1>Seja bem vindo</h1>
+    </div>
+    <div class="form">
+        <form th:action="@{/casas}">Dados da casa:
+            <input type="text" name="endereco" placeholder="Endereço" required>
+            <input type="text" name="preco" placeholder="Preço" required>
+            <input type="text" name="bairro" placeholder="Bairro" required>
+            <input type="text" name="cidade" placeholder="Cidade" required>
+            <input type="text" name="estado" placeholder="Estado" required>
+            <input type="text" name="cep" placeholder="CEP" required>
+            <input type="text" name="quartos" placeholder="Quartos" required>
+            <input type="text" name="banheiros" placeholder="Banheiros" required>
+            <input type="text" name="garagem" placeholder="Garagem" required>
+            <input type="text" name="metragem" placeholder="Área" required>
+            <input type="text" name="descricao" placeholder="Descrição" required>
+            
+            <button type="submit">CLIQUE AQUI</button>
+        
+        </form>
+    </div>
+</body>
+</html>
