@@ -2,7 +2,9 @@ package com.aguiarrealstate.first_spring_app.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-
+import jakarta.persistence.GeneratedValue;      
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 @Controller
 public class CasasController {
     @GetMapping("/casas")
@@ -11,6 +13,11 @@ public class CasasController {
     }
     
     public class casa {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private int id;
+
+
         String endereco;
         int preco;
         String bairro;
