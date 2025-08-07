@@ -5,21 +5,21 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
-public class imovel {
+public class Imovel {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private int id;
-    String endereco;
-    int preco;
-    String bairro;
-    String cidade;
-    String estado;
-    int cep;
-    int quartos;
-    int banheiros;
-    boolean garagem;
-    int metragem;
-    String descricao;
+    private String endereco;
+    private int preco;
+    private String bairro;
+    private String cidade;
+    private String estado;
+    private int cep;
+    private int quartos;
+    private int banheiros;
+    private boolean garagem;
+    private int metragem;
+    private String descricao;
 
 
 
@@ -141,4 +141,30 @@ public class imovel {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+
+    public Imovel(String endereco, int preco, String bairro, String cidade, String estado, int cep, int quartos,
+    int banheiros, boolean garagem, int metragem, String descricao) {
+        
+        super();                
+        this.endereco = endereco;
+        this.preco = preco;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.cep = cep;
+        this.quartos = quartos;
+        this.banheiros = banheiros;
+        this.garagem = garagem;
+        this.metragem = metragem;
+        this.descricao = descricao;
+    }
+
+
+    public Imovel() {
+        super();        
+        // Default constructor
+    }   
+
 }
+
