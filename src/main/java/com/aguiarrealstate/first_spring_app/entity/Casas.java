@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
-public class Imovel {
+public class Casas {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private int id;
@@ -143,7 +143,7 @@ public class Imovel {
     }
 
 
-    public Imovel(String endereco, int preco, String bairro, String cidade, String estado, int cep, int quartos,
+    public Casas(String endereco, int preco, String bairro, String cidade, String estado, int cep, int quartos,
     int banheiros, boolean garagem, int metragem, String descricao) {
         
         super();                
@@ -161,7 +161,7 @@ public class Imovel {
     }
 
 
-    public Imovel() {
+    public Casas() {
         super();        
         // Default constructor
     }   
